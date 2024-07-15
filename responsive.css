@@ -1,0 +1,54 @@
+/* tablet */
+@media only screen and (min-width:1023px) and (max-width:1439px) {
+    div.container {
+        padding: 0 65px;
+    }
+
+    div.navigation {
+        display: none;
+    }
+
+    div.menu {
+        display: block;
+        position: relative;
+    }
+
+    div.menu:hover div.navigation {
+        display: block;
+        position: absolute;
+    }
+}
+
+/* mobile */
+
+@media only screen and (min-width:430px) and (max-width:1022px) {
+    div.container {
+        padding: 0 15px;
+    }
+
+    div.navigation {
+        display: none;
+    }
+
+    div.menu {
+        display: block;
+        position: relative;
+    }
+
+    div.menu:hover div.navigation {
+        display: block;
+        position: absolute;
+    }
+
+    div.menu div.navigation {
+        right: 0;
+    }
+
+    div.groupBtn {
+        display: none;
+    }
+
+    div.menuBar {
+        flex-direction: row-reverse;
+    }
+}
